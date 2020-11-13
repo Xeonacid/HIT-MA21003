@@ -1,0 +1,276 @@
+\documentclass[]{article}
+
+\usepackage[hmargin=1.25in,vmargin=1in]{geometry}
+\usepackage{xeCJK}
+\usepackage{amsmath}
+\usepackage{cases}
+\setCJKmainfont{SimSun}
+
+\newcommand*{\dif}{\mathop{}\!\mathrm{d}}
+\numberwithin{equation}{section}
+\DeclareMathOperator{\arccot}{arccot}
+
+\begin{document}
+
+\section{}
+\begin{equation}
+    \sin^2\alpha+\cos^2\alpha=1
+\end{equation}
+\begin{equation}
+    1+\tan^2\alpha=\sec^2\alpha
+\end{equation}
+\begin{equation}
+    1+\cot^2\alpha=\csc^2\alpha
+\end{equation}
+\begin{equation}
+    \arctan x+\arctan\frac{1}{x}=\begin{cases}
+        \frac{\pi}{2},  & x>0 \\
+        -\frac{\pi}{2}, & x<0
+    \end{cases}
+\end{equation}
+\begin{equation}
+    \sin(\alpha\pm\beta)=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta
+\end{equation}
+\begin{equation}
+    \cos(\alpha\pm\beta)=\cos\alpha\cos\beta\mp\sin\alpha\sin\beta
+\end{equation}
+\begin{equation}
+    \tan(\alpha\pm\beta)=\frac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}
+\end{equation}
+\begin{equation}
+    \sin2\alpha=2\sin\alpha\cos\alpha
+\end{equation}
+\begin{equation}
+    \cos2\alpha=\cos^2\alpha-\sin^2\alpha=2\cos^2\alpha-1=1-2\sin^2\alpha
+\end{equation}
+\begin{equation}
+    \sin\frac{\alpha}{2}=\sqrt{\frac{1-\cos\alpha}{2}}
+\end{equation}
+\begin{equation}
+    \cos\frac{\alpha}{2}=\sqrt{\frac{1+\cos\alpha}{2}}
+\end{equation}
+\begin{equation}
+    \tan\frac{\alpha}{2}=\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}=\frac{\sin\alpha}{1+\cos\alpha}=\frac{1-\cos\alpha}{\sin\alpha}
+\end{equation}
+\begin{equation}
+    \sin\alpha=\frac{2\tan\frac{\alpha}{2}}{1+\tan^2\frac{\alpha}{2}}
+\end{equation}
+\begin{equation}
+    \cos\alpha=\frac{1-\tan^2\frac{\alpha}{2}}{1+\tan^2\frac{\alpha}{2}}
+\end{equation}
+
+\section{}
+\begin{equation}
+    (C)^{'}=0
+\end{equation}
+\begin{equation}
+    (x^\mu)^{'}=\mu x^{\mu -1}
+\end{equation}
+\begin{equation}
+    (a^x)^{'}=a^x\ln a
+\end{equation}
+\begin{equation}
+    (e^x)^{'}=e^x
+\end{equation}
+\begin{equation}
+    (\log_a x)^{'}=\frac{1}{x\ln a}
+\end{equation}
+\begin{equation}
+    (\ln x)^{'}=\frac{1}{x}
+\end{equation}
+\begin{equation}
+    (\sin x)^{'}=\cos x
+\end{equation}
+\begin{equation}
+    (\cos x)^{'}=-\sin x
+\end{equation}
+\begin{equation}
+    (\tan x)^{'}=\frac{1}{\cos^2 x}=\sec^2 x
+\end{equation}
+\begin{equation}
+    (\cot x)^{'}=-\frac{1}{\sin^2 x}=-\csc^2 x
+\end{equation}
+\begin{equation}
+    (\sec x)^{'}=\sec x\tan x
+\end{equation}
+\begin{equation}
+    (\csc x)^{'}=-\csc x\cot x
+\end{equation}
+\begin{equation}
+    (\arcsin x)^{'}=\frac{1}{\sqrt{1-x^2}}
+\end{equation}
+\begin{equation}
+    (\arccos x)^{'}=-\frac{1}{\sqrt{1-x^2}}
+\end{equation}
+\begin{equation}
+    (\arctan x)^{'}=\frac{1}{1+x^2}
+\end{equation}
+\begin{equation}
+    (\arccot x)^{'}=-\frac{1}{1+x^2}
+\end{equation}
+
+\section{}
+\begin{equation}
+    \sin x=x-\frac{x^3}{6}+o(x^5)
+\end{equation}
+\begin{equation}
+    \arcsin x=x+\frac{x^3}{6}+o(x^5)
+\end{equation}
+\begin{equation}
+    \tan x=x+\frac{x^3}{3}+o(x^5)
+\end{equation}
+\begin{equation}
+    \arctan x=x-\frac{x^3}{3}+o(x^5)
+\end{equation}
+
+\section{}
+\begin{equation}
+    e^x=1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+o(x^n)
+\end{equation}
+\begin{equation}
+    \sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots+(-1)^m\frac{x^{2m+1}}{(2m+1)!}+o(x^{2m+1})
+\end{equation}
+\begin{equation}
+    \cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots+(-1)^m\frac{x^{2m}}{(2m)!}+o(x^{2m})
+\end{equation}
+\begin{equation}
+    \ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\cdots+(-1)^{n-1}\frac{x^n}{n}+o(x^n)
+\end{equation}
+\begin{equation}
+    \frac{1}{1+x}=1-x+x^2+\cdots+(-1)^nx^n+o(x^n)
+\end{equation}
+\begin{equation}
+    \frac{1}{1-x}=1+x+x^2+\cdots+x^n+o(x^n)
+\end{equation}
+\begin{equation}
+    (1+x)^\mu=1+\mu x+\frac{\mu(\mu-1)}{2!}x^2+\cdots+\frac{\mu(\mu-1)\cdots(\mu-n+1)}{n!}x^n+o(x^n)
+\end{equation}
+
+\section{}
+\begin{equation}
+    k=\left|\frac{y^{''}}{(1+y{'^2})^\frac{3}{2}}\right|
+\end{equation}
+\begin{equation}
+    k=\frac{1}{R}
+\end{equation}
+\begin{equation}
+    \begin{cases}
+        \xi=x-\frac{y^{'}(1+y^{'^2})}{y^{''}} \\
+        \eta=y+\frac{(1+y^{'^2})}{y^{''}}
+    \end{cases}
+\end{equation}
+
+\section{}
+\begin{equation}
+    \int0\dif x=C
+\end{equation}
+\begin{equation}
+    \int1\dif x=x+C
+\end{equation}
+\begin{equation}
+    \int x^\mu\dif x=\frac{1}{\mu+1}x^{\mu+1}+C
+\end{equation}
+\begin{equation}
+    \int\frac{1}{x}\dif x=\ln\left|x\right|+C
+\end{equation}
+\begin{equation}
+    \int a^x\dif x=\frac{a^x}{\ln a}+C
+\end{equation}
+\begin{equation}
+    \int e^x\dif x=e^x+C
+\end{equation}
+\begin{equation}
+    \int\sin x\dif x=-\cos x+C
+\end{equation}
+\begin{equation}
+    \int\cos x\dif x=\sin x+C
+\end{equation}
+\begin{equation}
+    \int\sec^2x\dif x=\int\frac{1}{\cos^2x}\dif x=\tan x+C
+\end{equation}
+\begin{equation}
+    \int\csc^2x\dif x=\int\frac{1}{\sin^2x}\dif x=-\cot x+C
+\end{equation}
+\begin{equation}
+    \int\sec x\tan x\dif x=\sec x+C
+\end{equation}
+\begin{equation}
+    \int\csc x\cot x\dif x=-\csc x+C
+\end{equation}
+\begin{equation}
+    \int\frac{\dif x}{\sqrt{1-x^2}}=\arcsin x+C
+\end{equation}
+\begin{equation}
+    \int\frac{dx}{1+x^2}=\arctan x+C
+\end{equation}
+
+\section{}
+\begin{equation}
+    \int\tan x\dif x=-\ln\left|\cos x\right|+C
+\end{equation}
+\begin{equation}
+    \int\cot x\dif x=\ln\left|\sin x\right|+C
+\end{equation}
+\begin{equation}
+    \int\sec x\dif x=\ln\left|\sec x+\tan x\right|+C
+\end{equation}
+\begin{equation}
+    \int\csc x\dif x=\ln\left|\csc x-\tan x\right|+C
+\end{equation}
+\begin{equation}
+    \int\frac{\dif x}{x^2+a^2}=\frac{1}{a}\arctan\frac{x}{a}+C
+\end{equation}
+\begin{equation}
+    \int\frac{\dif x}{x^2-a^2}=\frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+C
+\end{equation}
+\begin{equation}
+    \int\frac{\dif x}{\sqrt{a^2-x^2}}=\arcsin\frac{x}{a}+C
+\end{equation}
+\begin{equation}
+    \int\frac{\dif x}{\sqrt{x^2\pm a^2}}=\ln\left|x+\sqrt{x^2\pm a^2}\right|+C
+\end{equation}
+\begin{equation}
+    \int\sqrt{a^2-x^2}\dif x=\frac{x}{2}\sqrt{a^2-x^2}+\frac{a^2}{2}\arcsin\frac{x}{a}+C
+\end{equation}
+\begin{equation}
+    \int\sqrt{x^2\pm a^2}\dif x=\frac{x}{2}\sqrt{x^2\pm a^2}\pm\frac{a^2}{2}\ln\left|x+\sqrt{x^2\pm a^2}\right|+C
+\end{equation}
+
+\section{}
+\begin{equation}
+    \int_0^\frac{\pi}{2}f(\sin x)\dif x=\int_0^\frac{\pi}{2}f(\cos x)\dif x
+\end{equation}
+\begin{equation}
+    \int_0^\pi xf(\sin x)\dif x=\frac{\pi}{2}\int_0^\pi f(\sin x)\dif x=\pi\int_0^\frac{\pi}{2}f(\sin x)\dif x
+\end{equation}
+\begin{equation}
+    \int_0^\frac{\pi}{2}\sin^n x\dif x=\int_0^\frac{\pi}{2}\cos^n x\dif x=
+    \begin{cases}
+        \frac{(n-1)(n-3)\cdots2}{n(n-2)\cdots3},                   & n\text{为奇数} \\
+        \frac{(n-1)(n-3)\cdots1}{n(n-2)\cdots2}\cdot\frac{\pi}{2}, & n\text{为偶数}
+    \end{cases}
+\end{equation}
+
+\section{}
+\begin{equation}
+    S=\int_a^b y(x)\dif x
+\end{equation}
+\begin{equation}
+    S=\int_{t_1}^{t_2}y(t)x^{'}(t)\dif t
+\end{equation}
+\begin{equation}
+    S=\frac{1}{2}\int_\alpha^\beta r^2(\theta)\dif\theta
+\end{equation}
+\begin{equation}
+    V=\int_a^b S(x)\dif x
+\end{equation}
+\begin{equation}
+    V_x
+\end{equation}
+
+\section{}
+若$f^{(i)}(x_0)=0,i=1,2,\cdots,n-1$，而$f^{(n)}(x_0)\neq0$，则：\\
+当$n$为奇数时，$x_0$是拐点，但不是极值点；\\
+当$n$为偶数时，$x_0$是极值点，但不是拐点。
+
+\end{document}
