@@ -148,7 +148,7 @@
 
 \section{}
 \begin{equation}
-    k=\left|\frac{y^{''}}{(1+y{'^2})^\frac{3}{2}}\right|
+    k=\frac{\left|y^{''}\right|}{(1+y{'^2})^\frac{3}{2}}
 \end{equation}
 \begin{equation}
     k=\frac{1}{R}
@@ -237,17 +237,20 @@
 \end{equation}
 
 \section{}
+当$p\ne1$，敛散与$\ln$无关\\
+等号跟着发散走
 \begin{equation}
-    \int_0^\frac{\pi}{2}f(\sin x)\dif x=\int_0^\frac{\pi}{2}f(\cos x)\dif x
-\end{equation}
-\begin{equation}
-    \int_0^\pi xf(\sin x)\dif x=\frac{\pi}{2}\int_0^\pi f(\sin x)\dif x=\pi\int_0^\frac{\pi}{2}f(\sin x)\dif x
-\end{equation}
-\begin{equation}
-    \int_0^\frac{\pi}{2}\sin^n x\dif x=\int_0^\frac{\pi}{2}\cos^n x\dif x=
+    \int_1^{+\infty}\frac{1}{x^p}\dif x
     \begin{cases}
-        \frac{(n-1)(n-3)\cdots2}{n(n-2)\cdots3},                   & n\text{为奇数} \\
-        \frac{(n-1)(n-3)\cdots1}{n(n-2)\cdots2}\cdot\frac{\pi}{2}, & n\text{为偶数}
+        \text{收敛}, & p>1   \\
+        \text{发散}, & p\le1
+    \end{cases}
+\end{equation}
+\begin{equation}
+    \int_0^1\frac{1}{x^q}\dif x
+    \begin{cases}
+        \text{收敛}, & 0<q<1 \\
+        \text{发散}, & q\ge1
     \end{cases}
 \end{equation}
 
@@ -265,12 +268,75 @@
     V=\int_a^b S(x)\dif x
 \end{equation}
 \begin{equation}
-    V_x
+    V_x=\pi\int_a^b y^2(x)\dif x
+\end{equation}
+\begin{equation}
+    V_x=\pi\int_{t_1}^{t_2}y^2(t)x^{'}(t)\dif t
+\end{equation}
+\begin{equation}
+    V_y=2\pi\int_a^b\left|x\right|\left|y(x)\right|\dif x
+\end{equation}
+\begin{equation}
+    V_y=2\pi\int_{t_1}^{t_2}\left|x(t)\right|\left|y(t)\right|x^{'}(t)\dif t
+\end{equation}
+\begin{equation}
+    s=\int_a^b\sqrt{1+[y^{'}(x)]^2}\dif x
+\end{equation}
+\begin{equation}
+    s=\int_{t_\text{小}}^{t_\text{大}}\sqrt{[x^{'}(t)]^2+[y^{'}(t)]^2}\dif t
+\end{equation}
+\begin{equation}
+    s=\int_\alpha^\beta\sqrt{[r(\theta)]^2+[r^{'}(\theta)]^2}\dif\theta
+\end{equation}
+\begin{equation}
+    S=2\pi\int_a^b\left|y(x)\right|\sqrt{1+[y^{'}(x)]^2}\dif x
+\end{equation}
+\begin{equation}
+    S=2\pi\int_{t_\text{小}}^{t_\text{大}}\left|y(t)\right|\sqrt{[x^{'}(t)]^2+[y^{'}(t)]^2}\dif t
+\end{equation}
+
+\section{}
+\begin{equation}
+    \frac{\dif y}{\dif x}+p(x)y=0:\
+    y=Ce^{-\int p(x)\dif x}
+\end{equation}
+\begin{equation}
+    \frac{\dif y}{\dif x}+p(x)y=q(x):\
+    y=e^{-\int p(x)\dif x}(C+\int q(x)e^{\int p(x)\dif x}\dif x)
 \end{equation}
 
 \section{}
 若$f^{(i)}(x_0)=0,i=1,2,\cdots,n-1$，而$f^{(n)}(x_0)\neq0$，则：\\
 当$n$为奇数时，$x_0$是拐点，但不是极值点；\\
 当$n$为偶数时，$x_0$是极值点，但不是拐点。
+
+\section{}
+\begin{equation}
+    \int\sqrt{a^2-x^2}\dif x:\ x=a\sin\theta
+\end{equation}
+\begin{equation}
+    \int\sqrt{a^2+x^2}\dif x:\ x=a\tan\theta
+\end{equation}
+\begin{equation}
+    \int\sqrt{x^2-a^2}\dif x:\ x=a\sec\theta
+\end{equation}
+
+\section{}
+\begin{equation}
+    \int_0^\frac{\pi}{2}f(\sin x)\dif x=\int_0^\frac{\pi}{2}f(\cos x)\dif x
+\end{equation}
+\begin{equation}
+    \int_0^\pi xf(\sin x)\dif x=\frac{\pi}{2}\int_0^\pi f(\sin x)\dif x=\pi\int_0^\frac{\pi}{2}f(\sin x)\dif x
+\end{equation}
+\begin{equation}
+    \int_0^\frac{\pi}{2}\sin^n x\dif x=\int_0^\frac{\pi}{2}\cos^n x\dif x=
+    \begin{cases}
+        \frac{(n-1)(n-3)\cdots2}{n(n-2)\cdots3},                   & n\text{为奇数} \\
+        \frac{(n-1)(n-3)\cdots1}{n(n-2)\cdots2}\cdot\frac{\pi}{2}, & n\text{为偶数}
+    \end{cases}
+\end{equation}
+\begin{equation}
+    \int_{-a}^a f(x)\dif x=\int_0^a[f(x)+f(-x)]\dif x
+\end{equation}
 
 \end{document}
